@@ -1,0 +1,100 @@
+@import url("fonts.css");
+
+.tela-inicial{
+background-image: url("../midia/background.PNG");
+
+}
+
+.fundo-telas{
+  background-color: rgb(242, 219, 184);
+}
+
+.h1-titulos {
+  text-align: center;
+  margin: 8% auto 2%;
+  width: 800px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+}
+
+.h2-texto {
+  text-align: center;
+  margin: auto;
+  width: 800px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+}
+
+.button-inicio {
+  display: flex;
+  background-color: rgb(137, 218, 169);
+  margin: 6% auto;
+  height: 80px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  
+  
+  font-family: "Stack Sans Text", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+.container-cards {
+  display:flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  border: 3px solid gray;
+}
+
+
+.resposta-certa {
+  border: 3px solid green;
+
+}
+.resposta-errada{
+  border: 3px solid red;
+
+}
+
+.frente{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+
+
+
+}
+
+.verso-errado{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+
+}
+
+.verso-certo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+
+}
