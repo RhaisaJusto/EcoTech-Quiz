@@ -1,12 +1,10 @@
 @import url("fonts.css");
 
-.tela-inicial{
-background-image: url("../midia/background.PNG");
-
-
+.tela-inicial {
+  background-image: url("../midia/background.PNG");
 }
 
-.fundo-telas{
+.fundo-telas {
   background-color: rgb(242, 219, 184);
 }
 
@@ -17,39 +15,44 @@ background-image: url("../midia/background.PNG");
   font-family: "Roboto", sans-serif;
   font-weight: 400; /*grossura da fonte */
   color: white;
-  
 }
 
 .h1-titulo-inicial {
   text-align: center;
   margin: 8% auto 2%;
   width: 800px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; /*grossura da fonte */
-  
+  font-family: "Stack Sans Text", sans-serif;
+  font-weight: 200; /*grossura da fonte */
+
   font-size: 32px;
   width: 650px;
-  color:
+  color: rgb(190, 142, 69);
+  text-shadow: 2px 2px 4px rgb(245, 240, 233);
 }
 
 .h2-texto {
   text-align: center;
   margin: 80px auto 40px auto;
   width: 800px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; /*grossura da fonte */
-
+  font-family: "Stack Sans Text", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .h2-texto-inicial {
   text-align: center;
-  margin: 80px auto 40px auto;
-  font-family: "Roboto", sans-serif;
+  margin: 25px auto 20px auto;
+  font-family: "Stack Sans Text", sans-serif;
   font-weight: 400; /*grossura da fonte */
 
   font-size: 18px;
   width: 620px;
   line-height: 1.6;
+  color: rgb(190, 142, 69);
+  text-shadow: 2px 2px 4px rgb(245, 240, 233);
 }
 
 .button-inicio {
@@ -62,8 +65,7 @@ background-image: url("../midia/background.PNG");
   align-items: center;
   border-radius: 10px;
   text-decoration: none;
-  
-  
+
   font-family: "Stack Sans Text", sans-serif;
   font-size: 20px;
   color: white;
@@ -72,11 +74,21 @@ background-image: url("../midia/background.PNG");
   font-style: normal;
 }
 
+h3 {
+  text-align: center;
+  margin-top: 50px;
+
+  font-family: "Chela One", system-ui;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(226, 175, 97);
+}
 
 /* ------------------------------------------------------------------------- */
 
 .container-cards {
-  display:flex;
+  display: flex;
   justify-content: center;
   gap: 40px;
   margin-top: 60px;
@@ -85,7 +97,7 @@ background-image: url("../midia/background.PNG");
 .card {
   width: 300px;
   height: 250px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -96,85 +108,151 @@ background-image: url("../midia/background.PNG");
   border: 3px solid gray;
 }
 
-
-.frente{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; /*grossura da fonte */
-
-
-
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.verso-errado{
+.frente {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /*grossura da fonte */
+}
 
+.verso-errado {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /*grossura da fonte */
 }
 
 .verso-certo {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /*grossura da fonte */
-
 }
 
 /* ----------------------------------------------------------------- */
 
 /*css da virada do card */
-.virado{
+.virado {
   transform: rotateY(180deg);
-
 }
 
 .verso-certo,
-.verso-errado{
-    transform: rotateY(180deg);
+.verso-errado {
+  transform: rotateY(180deg);
 }
 
 .frente,
 .verso-certo,
-.verso-errado{
+.verso-errado {
   display: flex;
   justify-content: center;
-    align-items: center;
-    text-align: center;
-    backface-visibility: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  align-items: center;
+  text-align: center;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.card{
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    border: 3px solid rgb(251, 183, 55);
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  border: 3px solid rgb(251, 183, 55);
 }
 
-.acertou{
-    border: 3px solid green;
+.acertou {
+  border: 3px solid green;
 }
 
-.errou{
-    border: 3px solid red;
+.errou {
+  border: 3px solid red;
 }
 
-.selecionado-certo{
-    background-color: rgb(175, 241, 175);
+.selecionado-certo {
+  background-color: rgb(175, 241, 175);
 }
 
-.selecionado-errado{
-    background-color: rgb(244, 161, 161);
+.selecionado-errado {
+  background-color: rgb(244, 161, 161);
 }
-
 
 /* blur tela inicial */
-.container-inicial{
-    width: 700px;
-    margin: 100px auto;
-    padding: 35px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+.container-inicial {
+  width: 700px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------------------------- */
+
+/*CSS tela final */
+.container-final {
+  width: 700px;
+  margin: 120px auto;
+  padding: 50px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  backdrop-filter: blur(7px);
+}
+
+.pontuacao-final {
+  font-size: 70px;
+  margin: 30px 0;
+}
+
+.tela-final {
+  background-image: url("../midia/background.PNG");
+}
+
+.titulo-final,
+#mensagem-final {
+  text-align: center;
+  margin: 10px auto 40px auto;
+  font-family: "Stack Sans Text", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+
+  font-size: 20px;
+  width: 620px;
+  line-height: 1.6;
+  color: rgb(190, 142, 69);
+  text-shadow: 2px 2px 4px rgb(245, 240, 233);
+}
+
+#resultado {
+  text-align: center;
+  margin: 10px auto 40px auto;
+  font-family: "Stack Sans Text", sans-serif;
+  font-weight: 400; /*grossura da fonte */
+
+  font-size: 60px;
+  width: 620px;
+  line-height: 1.6;
+  color: rgb(137, 218, 169);
+  text-shadow: 2px 2px 4px rgb(245, 240, 233);
+}
+
+/* ---------------------------------------- */
+/* footer */
+.footer {
+  width: 100%;
+  text-align: center;
+
+  padding: 20px 0;
+  margin-top: 35px;
+}
+
+.footer p {
+  margin: 4px 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: rgb(160, 120, 70);
 }
