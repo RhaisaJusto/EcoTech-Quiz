@@ -1,7 +1,7 @@
 {
   "name": "ECOTECH QUIZ",
   "short_name": "EcoQuiz",
-  "start_url": "./HTML/inicio.html",
+  "start_url": "/EcoTech-Quiz/HTML/inicio.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",
