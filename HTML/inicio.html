@@ -1,7 +1,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../midia/eco-quiz-icon.gif"/>
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" type="image/png" href="../midia/eco-quiz-icon.gif" />
     <title>EcoTech Quiz</title>
 
     <link rel="stylesheet" href="../CSS/style.css" />
@@ -37,5 +38,14 @@
       <p>EcoTech Quiz - MindBuilders © 2026</p>
       <p>Conscientização ambiental através da tecnologia</p>
     </footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("../service-worker.js")
+          .then(() => console.log("Service Worker registrado!"))
+          .catch((err) => console.log("Erro:", err));
+      }
+    </script>
   </body>
 </html>
