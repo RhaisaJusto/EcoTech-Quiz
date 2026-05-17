@@ -23,16 +23,16 @@ Ao final, o usuário recebe seu resultado e uma mensagem personalizada com base 
 
 ## 🚀 Funcionalidades
 
-✔ Interface interativa com efeito flip-card  
-✔ Sistema de pontuação com LocalStorage  
-✔ Tela final com resultado dinâmico  
-✔ Reinício automático da pontuação  
-✔ Layout responsivo para tablets  
-✔ Design com efeito glassmorphism  
-✔ Feedback visual para acertos e erros
-✔ Suporte offline via PWA
-✔ Instalável em tablet
-✔ Experiência semelhante a aplicativo nativo
+- Interface interativa com efeito flip-card
+- Sistema de pontuação com LocalStorage
+- Tela final com resultado dinâmico
+- Reinício automático da pontuação
+- Layout responsivo para tablets
+- Design com efeito glassmorphism
+- Feedback visual para acertos e erros
+- Suporte offline via PWA
+- Instalável em tablet
+- Experiência semelhante a aplicativo nativo
 
 ---
 
